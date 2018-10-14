@@ -18,5 +18,5 @@ app.on("ready", () => {
     
     const iconName = process.platform === "win32" ? "windows-icon.png" : "iconTemplate@2x.png";
     const iconPath = path.join(__dirname + `/src/assets/${iconName}`);
-    new TimerTray(iconPath, mainWindow);
+    tray = new TimerTray(iconPath, mainWindow);
 });
